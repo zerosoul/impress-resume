@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" slick-uniqueid="3" style="height: 100%;">
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<meta name="author" content="yanggc">
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -9,427 +9,605 @@
 		<link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
 		<link href="css/impress.css" rel="stylesheet">
 	</head>
-	<body style="height: 100%;">
-		<div id="resume_name">
-			<span>Tristan's Resume</span>
+	<body class="impress-not-supported">
+		<!--fallback message is only visible when there is `impress-not-supported` class on body.-->
+		<div class="fallback-message" style="display: none">
+			<p>
+				Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.
+			</p>
+			<p>
+				For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.
+			</p>
 		</div>
-		<div id="header">
-			<div id="header_panel">
-				<div class="top_menu">
-					<ul>
-						<li id="menu-about" class="menu_highlight">
-							<a href="#/about">
-								About Me
-							</a>
-						</li>
-						<li id="menu-portfolio-overview" class="">
-							<a href="#/portfolio-overview">
-								Past
-							</a>
-						</li>
-						<li id="menu-timeline-start">
-							<a href="#/timeline-start">
-								Present
-							</a>
-						</li>
-						<li id="menu-services-overview">
-							<a href="#/services-overview">
-								Future
-							</a>
-						</li>
-					</ul>
-				</div>
+		<div id="top_header">
+			<div class="resume_name">
+				<a href="#/landing_page">
+					Tristan's Resume
+				</a>
+			</div>
+			<div class="top_menu">
+				<ul>
+					<li id="menu_about_me">
+						<a href="#/about_me">
+							About Me
+						</a>
+					</li>
+					<li id="menu_about_past">
+						<a href="#/about_past">
+							Past
+						</a>
+					</li>
+					<li id="menu_about_recently">
+						<a href="#/about_recently">
+							Recently
+						</a>
+					</li>
+					<li id="menu_about_contact">
+						<a href="#/about_contact">
+							Contact
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
-		<div id="wrap">
+		<!--
+		作者：yanggc888@163.com
+		时间：2014-04-15
+		描述：magic starts
+		-->
+		<div id="impress">
+			<!--
+			作者：yanggc888@163.com
+			时间：2014-04-15
+			描述：landing page
+			-->
+			<div id="landing_page" class="step present active" data-x="0" data-y="0">
 
-			<div id="impress" >
-
-				<!--
-				About Me Steps
-				-->
-				<div id="about" class="step slide present active" data-x="-1000" data-y="-1500" >
-					<div>
-						<div id="about_intro">
-							<!--<span class="title1">杨国春</span>-->
-							<span class="title2">
-								<img src="img/aboutme.jpg">
-							</span>
-							<span class="title3">
-								<img src="img/t.png" />
-								ristan</span>
-							<p>
-								Think More,Code Less
-							</p>
-						</div>
+				<span class="title1">
+					<img src="img/aboutme.jpg">
+				</span>
+				<span class="title2">
+					<img src="img/t.png" />
+					ristan</span>
+				<p>
+					Think More,Code Less
+				</p>
+			</div>
+			<!--
+			作者：yanggc888@163.com
+			时间：2014-04-15
+			描述：about me
+			-->
+			<div id="about_me" class="step" data-x="1500" data-y="-1500">
+				<div class="panel">
+					<p>
+						My name is <em>Tristan</em>
+					</p>
+					<p>
+						A <em>Software Developer</em>
+					</p>
+					<div class="tipimg">
+						<img src="img/gcs.gif"/>
 					</div>
 				</div>
-				<div class="step slide past" data-x="0" data-y="-1500" >
-					<div class="intro-title" style="margin-top: 120px">
-						我叫<span>杨国春</span>
-						<br/>
-						是一名<span>软件工程师</span>
-						<br/>
-						<img src="img/gcs.gif" />
-					</div>
-				</div>
-				<div class="step slide past" data-x="1000" data-y="-1500" >
-					<div class="intro-title">
-						呃...等一下...我再想想...
-						<br />
+			</div>
+			<div class="step" data-x="3000" data-y="-1500">
+				<div class="panel">
+					<p>
+						Wait moment
+					</p>
+					<p>
+						Let me <em>rethink</em> it...
+					</p>
+					<div class="tipimg">
 						<img src="img/wh.gif" />
 					</div>
 				</div>
-				<div class="step slide past" data-x="0" data-y="0" data-scale="4" >
-					<div class="intro-title">
-						更确切地说，我是...
+			</div>
+			<div class="step" data-x="4500" data-y="-1500">
+				<div class="panel" style="margin-top: 130px;">
+					<p>
+						OK
+					</p>
+					<p>
+						more specifically
+					</p>
+					<p>
+						I am a ...
+					</p>
+					<div class="tipimg">
+						<img src="img/who.gif"/>
 					</div>
 				</div>
-				<div class="step slide past" data-x="850" data-y="3000" data-scale="5"  data-rotate="90" >
-					<div class="intro-title">
-						<span>想法搬运工</span>
-						<br/>
-						&nbsp;&nbsp;&nbsp;
-						<img src="img/byg.jpg" />
-					</div>
+			</div>
+			<div class="step" data-x="4000" data-y="0" data-scale="4">
+				<div class="panel">
+					<center>
+						<p style="font-size: 80px;margin-top: 40px;">
+							<em>Problem Solver</em>
+						</p>
+						<div class="tipimg"  style="margin-right: 250px;">
+
+							<img src="img/ps.gif"/>
+
+						</div>
+					</center>
 				</div>
-				<div class="step slide past" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-					<div class="intro-title">
-						把想法:
-						<br/>
-						从经理的嘴里
-						<br/>
-						搬到顾客的心里
-					</div>
+			</div>
+			<div class="step" data-x="3000" data-y="2000" data-rotate-x="90" data-scale="5">
+				<div class="panel">
+					<p>
+						I fix problem
+					</p>
+					<p>
+						which makes by <em>user</em>
+					</p>
+					<p>
+						well,and by <em>myself</em>
+					</p>
 				</div>
-				<div class="step slide past" data-x="2825" data-y="2325" data-z="-1000" data-rotate="300" data-scale="1">
-					<div class="intro-title">
-						我在寻找有意思的事(工)情(作)
-						<br />
-						&nbsp;&nbsp;&nbsp;
+			</div>
+			<div class="step" data-x="6000" data-y="1500" data-rotate="180" data-scale="6">
+				<div class="panel">
+					<p>
+						I'm looking for
+					</p>
+					<p>
+						something interesting
+					</p>
+					<p>
+						Maybe it's a <em>job</em>
+					</p>
+					<div class="tipimg">
 						<img src="img/xz.gif" />
 					</div>
 				</div>
-				<div class="step slide past" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-					<div class="intro-title">
-						如果你在找<span>Problem Solver</span>
-						<br />
-						而不是<span>Problem Maker</span>
-						<br/>
-						或许找对人了
-						<br/>
-						<br/>
-						不过别急，先了解一下我...
-					</div>
+			</div>
+			<div class="step" data-x="4500" data-y="3000" data-z="-3000" data-rotate="300" data-scale="1">
+				<div class="panel" >
+					<p>
+						If you are seeking
+					</p>
+					<p>
+						a <em>Problem Solver</em>
+					</p>
+					<p>
+						not a <em>Problem Maker</em>
+					</p>
+					<p>
+						Keep going
+					</p>
+					<p>
+						Let me introduce myself...
+					</p>
 				</div>
-
-				<!--
-				作者：yanggc888@163.com
-				时间：2014-04-13
-				描述：Past Page
-				-->
-				<div id="about-past" class="step slide past" data-x="-4000" data-y="-1500">
-					<div class="tip">
+			</div>
+			<!--
+			作者：yanggc888@163.com
+			时间：2014-04-15
+			描述：about past
+			-->
+			<div id="about_past" class="step" data-x="1500" data-y="1500">
+				<div class="panel">
+					<div class="titleimg">
 						<img src="img/tip.gif"/>
 					</div>
 					<div class="title">
 						<p>
-							唠唠过去
+							My Past
 						</p>
 					</div>
 				</div>
-				<!-- Portfolio Page 1 -->
-				<div id="portfolio-overview" class="step slide past" data-x="-4000" data-y="-500" data-scale="3" data-type="portfolio-gallery" ></div>
-				<div id="portfolio-1" class="step slide portfolio past" data-x="-4850" data-y="-900" data-type="portfolio" >
-					<div class="large" style="display: none;">
+			</div>
+			<div id="past_overview" class="step" data-x="7800" data-y="6200" data-scale="2.2" data-type="past_items"></div>
+			<div class="step" data-x="7000" data-y="6000" data-type="past_item">
+				<div class="past_item">
+					<div class="large">
 						<img src="img/edu-large.gif">
 					</div>
-					<div class="small" style="display: block;">
-						<div class="portfolio-left">
+					<div class="small">
+						<div class="past_item_left">
 							<img src="img/edu-small.gif">
 						</div>
-						<div class="portfolio-right">
-							<p class="project-title">
-								<span>教育经历</span>
+						<div class="past_item_right">
+							<p class="past_item_title">
+								<span>Education<span class="emphasis">@</span>GYU</span>
 							</p>
-							<p class="project-site">
-								<span>2008-2012 贵阳学院 软件工程 大学本科</span>
+							<p class="past_item_keys">
+								<span>2008-2012 GuiYang University SE Bachelor</span>
 							</p>
-							<p class="project-desc">
-								专业课全优<br />
-
-								国家励志奖学金获得者<br/>
-
-								省级优秀毕业生<br/>
-
-								MCP (微软专家认证)  ID#7545679<br/>
-
-								CET 4 & CET 6 均500+<br/>
-
-							</p>
+							<div class="past_item_desc">
+								<ul >
+									<li >
+										Straight A student
+									</li>
+									<li>
+										The National Motivational Scholarship Owner
+									</li>
+									<li>
+										Province Outstanding Graduate Scholarship
+									</li>
+									<li>
+										MCP(Microsoft Certified Professional) ID#7545679
+									</li>
+									<li>
+										CET 4 & CET 6 (500+)
+									</li>
+								</ul>
+							</div>
 							<!--<a href="">
 							Read More
 							</a>-->
 						</div>
 					</div>
 				</div>
-				<div id="portfolio-2" class="step slide portfolio past" data-x="-3550" data-y="-900" data-type="portfolio" >
-					<div class="large" style="display: none;">
+			</div>
+			<div class="step" data-x="8500" data-y="6000" data-type="past_item">
+				<div class="past_item">
+					<div class="large">
 						<img src="img/reward-large.gif">
 					</div>
-					<div class="small" style="display: block;">
-						<div class="portfolio-left">
+					<div class="small">
+						<div class="past_item_left">
 							<img src="img/reward-small.gif">
 						</div>
-						<div class="portfolio-right">
-							<p class="project-title">
-								<span>获奖经历</span>
+						<div class="past_item_right">
+							<p class="past_item_title">
+								<span>Awards<span class="emphasis">@</span>Contest</span>
 							</p>
-							<p class="project-site">
-								<span>2010 数学建模</span>
+							<p class="past_item_keys">
+								<span>2010 CUMCM</span>
 							</p>
-							<p class="project-desc" style="margin: 10px 0;">
-								全国大学生数学建模竞赛，国家一等奖。参赛院校包括港澳台，新加坡，美国等地，在规定时间团队化解决某一特定问题，要求创新意识，团队精神
-							</p>
-							<a href="http://www.gyu.cn:8888/Html/2010-12-15/725.Html" target="_blank">
-								相关报道
-							</a>
+							<div class="past_item_desc">
+								<ul >
+									<li >
+										CUMCM National First Prize!
+									</li>
+									<li>
+										CUMCM:A contest which includes universities from Hong Kong,Macao,Taiwan,Singapore and America.It require giving a solution of specified problem in limited time(3 days)
+									</li>
+								</ul>
+							</div>
+							<div class="read_more">
+								<a href="http://www.gyu.cn:8888/Html/2010-12-15/725.Html" target="_blank">
+									Read More
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="portfolio-3" class="step slide portfolio future" data-x="-4850" data-y="-200" data-type="portfolio" >
-					<div class="large" style="display: none;">
+			</div>
+			<div class="step" data-x="7000" data-y="6650" data-type="past_item">
+				<div class="past_item">
+					<div class="large">
 						<img src="img/project1-large.gif">
 					</div>
-					<div class="small" style="display: block;">
-						<div class="portfolio-left">
+					<div class="small">
+						<div class="past_item_left">
 							<img src="img/project1-small.gif">
 						</div>
-						<div class="portfolio-right">
-							<p class="project-title">
-								<span>项目经历</span>
+						<div class="past_item_right">
+							<p class="past_item_title">
+								<span>Project<span class="emphasis">@</span>Vinnosoft</span>
 							</p>
-							<p class="project-site">
+							<p class="past_item_keys">
 								<span>2012-2013 Muilti-Tenant E-Training Platform</span>
 							</p>
-							<p class="project-desc" style="margin: 10px 0; line-height: 30px;">
-								简言之:一个平台,多个租户共存.不同租户可以分流到各自的Portal（门户）,租户Portal又分为LearnPortal,ManagePortal,AdminPortal,以对应不同业务需求,很好地实现了负载均衡,可扩展,可定制化等特性. 
-							</p>
-							<a href="http://mazda.product-train.com " target="_blank">
-								在线演示（用户名“vinnoadmin”密码“vinnosoft”）
-							</a>
+							<div class="past_item_desc">
+								<ul >
+									<li >
+										In short:one E-training platform,several tenants coexist.
+									</li>
+									<li>
+										Key words:ASP.NET,C#,Webservice,Javascript,JSON
+									</li>
+									<li>
+										My job:back-end&mobile portal(version 1) development
+									</li>
+									<li>
+										Online demo:
+										<a href="http://mazda.product-train.com " target="_blank">
+											Mazda Tenant(ID:vinnoadmin PSW:vinnosoft)
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="read_more">
+								<a href="http://www.vinnosoft.com/" target="_blank">
+									Read More
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="portfolio-4" class="step slide portfolio future" data-x="-3550" data-y="-200" data-type="portfolio">
-					<div class="large" style="display: none">
+			</div>
+			<div class="step" data-x="8500" data-y="6650" data-type="past_item">
+				<div class="past_item">
+					<div class="large">
 						<img src="img/project2-large.gif">
 					</div>
-					<div class="small" style="display: block;">
-						<div class="portfolio-left">
+					<div class="small">
+						<div class="past_item_left">
 							<img src="img/project2-small.gif">
 						</div>
-						<div class="portfolio-right">
-							<p class="project-title">
-								<span>项目经历</span>
+						<div class="past_item_right">
+							<p class="past_item_title">
+								<span>Project<span class="emphasis">@</span>Microsoft</span>
 							</p>
-							<p class="project-site">
-								<span>2014 微软教育应用联盟 Study Centre</span>
+							<p class="past_item_keys">
+								<span>2014 Microsoft Education App Alliance:Study Centre</span>
 							</p>
-							<p class="project-desc" style="margin: 10px 0; line-height: 30px;">
-								Win8在线学习应用。由华辰创想、数字冰雹和微软中国合作开发完成。使用XAML/C#语言，MVVC模式开发。“Win8应用开发与维护”以及“混合云架构”两方面由我全权负责。现该应用在App Store中获得了4.7/5.0好评，下载量突破3k。
-							</p>
-							<a href="http://app.vinnosoft.cn" target="_blank">
-								应用官网（该网站是我做的）
-							</a>
+							<div class="past_item_desc">
+								<ul >
+									<li >
+										Windows 8.1 app,focus on E-learning,score 4.7/5.0,downloads up to 4000+!
+									</li>
+									<li>
+										Key words:XAML/C#,MVVM,HyperCloud Deployment
+									</li>
+									<li>
+										My job:app development & maintaining
+									</li>
+									<li>
+										App Landing Page(my work):
+										<a href="http://app.vinnosoft.cn/" target="_blank">
+											Study Centre
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="read_more">
+								<a href="http://apps.microsoft.com/windows/zh-cn/app/study-centre/4b2f67e0-3cc7-4d3a-a628-1fa32faf9e93" target="_blank">
+									Read More
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Timeline Steps -->
-				<div id="timeline-step1" class="step slide timeline str-2011 future" data-x="7200" data-y="100" data-z="-700" data-year="2011" data-type="timeline" >
-					<div class="timeline-panel">
-						<p class="date">
-							05
-						</p>
-						<p class="month">
-							June
-						</p>
-						<p class="year">
-							2011
+			</div>
+			<div class="step" data-x="8500" data-y="4500" data-rotate-y="90">
+				<div class="panel">
+					<p>
+						More about me:
+					</p>
+					<div class="about_me_more" >
+						<p>
+							<img src="img/douban.png"/>
+							Reads on
+							<a href="http://book.douban.com/people/yanggc/" target="_blank">
+								<span class="emphasis">Douban</span>
+							</a>
 						</p>
 						<p>
-							Description
-						</p>
-					</div>
-				</div>
-				<div id="timeline-step2" class="step slide timeline future" data-x="7500" data-y="100" data-z="-700" data-year="2011" data-type="timeline" >
-					<div class="timeline-panel">
-						<p class="date">
-							12
-						</p>
-						<p class="month">
-							April
-						</p>
-						<p class="year">
-							2011
+							<img src="img/github.png"/>
+							Codes on
+							<a href="https://github.com/zerosoul" target="_blank">
+								<span class="emphasis">Github</span>
+							</a>
 						</p>
 						<p>
-							Description
-						</p>
-					</div>
-				</div>
-				<div id="timeline-start" class="step slide timeline str-2012 future" data-x="6000" data-y="0" data-year="2012" data-type="timeline">
-					<div class="timeline-panel">
-						<p class="date">
-							25
-						</p>
-						<p class="month">
-							December
-						</p>
-						<p class="year">
-							2012
+							<img src="img/stackoverflow.png"/>
+							Activeness on
+							<a href="http://stackoverflow.com/users/2365376/yanggc" target="_blank">
+								<span class="emphasis">Stackoverflow</span>
+							</a>
 						</p>
 						<p>
-							Description
+							<img src="img/weibo.png"/>
+							Talks on
+							<a href="http://weibo.com/yanggc2014" target="_blank">
+								<span class="emphasis">Weibo</span>
+							</a>
 						</p>
 					</div>
 				</div>
-				<div id="timeline-step3" class="step slide timeline future" data-x="6300" data-y="0" data-year="2012" data-type="timeline" >
-					<div class="timeline-panel">
-						<p class="date">
-							17
+
+			</div>
+			<!--
+			作者：yanggc888@163.com
+			时间：2014-04-15
+			描述：about recently
+			-->
+			<div id="about_recently" class="step" data-x="-1500" data-y="1500">
+				<div class="panel">
+					<div class="titleimg">
+						<img src="img/tip.gif"/>
+					</div>
+					<div class="title" style="margin-right:250px; ">
+						<p>
+							Recently
 						</p>
-						<p class="month">
-							September
-						</p>
-						<p class="year">
-							2012
+					</div>
+				</div>
+			</div>
+			<div class="step" data-x="-3000" data-y="-3000">
+				<div class="panel">
+					<div class="recently_nodejs">
+						<p>
+							I'm learning <em>NODE.JS</em>
 						</p>
 						<p>
-							Description
-						</p>
-					</div>
-				</div>
-				<div id="timeline-step4" class="step slide timeline future" data-x="6600" data-y="0" data-year="2012" data-type="timeline" >
-					<div class="timeline-panel">
-						<p class="date">
-							29
-						</p>
-						<p class="month">
-							March
-						</p>
-						<p class="year">
-							2012
+							a powerful platform built on Chrome's JavaScript runtime
 						</p>
 						<p>
-							Description
+							and I hope <em>Node.js developer</em> is my next job
 						</p>
 					</div>
 				</div>
-				<!-- Services Steps -->
-				<div id="services-overview" class="step slide future" data-x="-3000" data-y="-350" data-scale="1">
-					<div class="title">
-						<p class="line1">
-							Services
+			</div>
+			<div class="step" data-x="-3000" data-y="-3000" data-z="3000">
+				<div class="panel">
+					<div class="recently_nodejs" style="background-image: url(img/uc.gif);background-repeat: no-repeat;background-position: right bottom;">
+						<p>
+							Of course
 						</p>
-						<p class="line2">
-							High Quality Services at Low Rates
+						<p>
+							next jobs also under consideration
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="step" data-x="-4400" data-y="-300" data-z="1000" data-rotate-x="0" >
+				<div class="panel">
+					<div class="job_list">
+						<p>
+							Windows 8 App Development(C#)
+						</p>
+						<div class="job_logo">
+							<img src="img/win8.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step" data-x="-4400" data-z="2000" data-rotate-x="90" >
+				<div class="panel">
+					<div class="job_list">
+						<p>
+							Front-end Development
+						</p>
+						<div class="job_logo">
+							<img src="img/be.gif" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step" data-x="-4400" data-z="3000"  data-rotate-x="180" >
+				<div class="panel">
+					<div class="job_list">
+						<p>
+							ASP.NET Development
+						</p>
+						<div class="job_logo">
+							<img src="img/aspnet.gif" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step" data-x="-4400" data-z="4000" data-rotate-x="270" >
+				<div class="panel">
+					<div class="job_list">
+						<p>
+							HTML5 Development
+						</p>
+						<div class="job_logo">
+							<img src="img/html5.gif" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--
+			作者：yanggc888@163.com
+			时间：2014-04-15
+			描述：about future
+			-->
+			<div id="about_contact" class="step" data-x="-1500" data-y="-1500" >
+				<div class="panel">
+					<p>
+						That's all! Contact me with:
+					</p>
+					<div class="about_me_more" style="line-height: 80px;">
+						<p>
+							<img src="img/weixin.png"/>
+							Wechat ID:<span class="emphasis">yanggc_2013</span>
+						</p>
+						<p>
+							<img src="img/email.png"/>
+							E-mail:<span class="emphasis">yanggc888 AT 163.com</span>
+						</p>
+					</div>
+					<p>
+						Maybe we can have a talk face to face!
+					</p>
+					<p>
+						I'm in Beijing,where are you?
+					</p>
+				</div>
+
+			</div>
+			<div class="step" data-x="-1500" data-y="1500" data-rotate="-90">
+				<div class="panel">
+					<div class="about_hobbies">
+						<p>
+							Are you still browersing this? 
+						</p>
+						<p>Really?!</p>
+						<p class="small_fonts">
+							I deem it an honour,so here are my hobbies：
+						</p>
+						<p class="small_fonts">
+							Tip:get more details by click on each item :)
+						</p>
+
+						<p class="hobby_item">
+							<a href="http://mp.weixin.qq.com/s?__biz=MzA5MTM2MjAxNQ==&mid=200085520&idx=1&sn=638b106df9f63865b8c15743113891cd#rd" target="_blank">
+								Riding
+							</a>
+							<a href="http://user.qzone.qq.com/303301491/photo/d1745474-8174-4747-ad44-dc473dc5126e/" target="_blank">
+								Photography
+							</a>
 						</p>
 					</div>
 				</div>
-				<div id="services-step1" class="step slide services future" data-x="-1400" data-y="-300" data-rotate-x="0" >
-					<div class="service-desc">
-						WordPress Plugin Develoment
-					</div>
-				</div>
-				<div id="services-step2" class="step slide services future" data-x="-1400" data-z="-300" data-y="0" data-rotate-x="90" >
-					<div class="service-desc">
-						WordPress Theme Design
-					</div>
-				</div>
-				<div id="services-step3" class="step slide services future" data-x="-1400" data-y="400" data-rotate-x="180" >
-					<div class="service-desc">
-						Freelance Article Writing
-					</div>
-				</div>
-				<div id="services-step4" class="step slide services future" data-x="-1400" data-z="300" data-y="100" data-rotate-x="270" >
-					<div class="service-desc">
-						PHP Development
+			</div>
+			<div class="step" data-x="-1500" data-y="3000" data-z="-4000" data-rotate-x="30" data-rotate-y="50">
+				<div class="panel">
+					<div class="about_hobbies">
+						<p>Still?Amazing,I'm impressed!</p>
+						<p class="small_fonts">Feel free to let me know that you got that far</p>
+						<p class="small_fonts">Below is my cellphone number</p>
+						<p class="small_fonts">I believe you are smart enough to get it \(^o^)/</p>
+						<p style="letter-spacing: 6px;">+86 1820138<span class="cellphone">5848</span></p>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		</div>
-		<div id="timeline_tracker" style="display: none;">
-			<span id="nav-2012" data-year="2012">2012</span><span id="nav-2011" data-year="2011">2011</span>
-		</div>
 		<div class="hint">
 			<p>
-				请使用 “空格” 或者 “左、右箭头” 来控制演示
+				Please press spacebar or arrow keys to navigate.
 			</p>
 		</div>
-
 		<script src="js/jquery.min.js"></script>
 		<script src="js/impress.js"></script>
 		<script>
 			var api = impress();
 			api.init();
 			document.addEventListener("impress:stepenter", function(event) {
-				$("#timeline_tracker").hide();
-				$("#timeline_tracker span").removeClass("year-highlight");
 
 				var data_type = $(".active").attr("data-type");
-				if (data_type == 'portfolio') {
+				if (data_type == 'past_item') {
 					$(".active .small").show();
 					$(".active .large").hide();
-				} else if (data_type == 'portfolio-gallery') {
+				} else if (data_type == 'past_items') {
 					$(".small").hide();
 					$(".large").show();
-				} else if (data_type == 'timeline') {
-					$("#timeline_tracker").show();
-					var data_year = $(".active").attr("data-year");
-					$("#nav-" + data_year).addClass("year-highlight");
 				}
 			}, false);
 			document.addEventListener("impress:stepenter", function(event) {
 				var data_id = $(".active").attr("id");
-				if (data_id == 'about') {
+				if (data_id == "landing_page") {
 					$("li").removeClass("menu_highlight");
-					$("#menu-about").addClass("menu_highlight");
-				} else if (data_id == 'portfolio-overview') {
-					$("li").removeClass("menu_highlight");
-					$("#menu-portfolio-overview").addClass("menu_highlight");
-				} else if (data_id == 'timeline-start') {
-					$("li").removeClass("menu_highlight");
-					$("#menu-timeline-start").addClass("menu_highlight");
-				} else if (data_id == 'services-overview') {
-					$("li").removeClass("menu_highlight");
-					$("#menu-services-overview").addClass("menu_highlight");
+					$("#top_header .resume_name").css("background", "#D00505");
+				} else {
+					$("#top_header .resume_name").css("background", "none repeat scroll 0 0 #000000")
+					if (data_id == 'about_me') {
+						$("li").removeClass("menu_highlight");
+						$("#menu_about_me").addClass("menu_highlight");
+					} else if (data_id == 'about_past') {
+						$("li").removeClass("menu_highlight");
+						$("#menu_about_past").addClass("menu_highlight");
+					} else if (data_id == 'about_recently') {
+						$("li").removeClass("menu_highlight");
+						$("#menu_about_recently").addClass("menu_highlight");
+					} else if (data_id == 'about_contact') {
+						$("li").removeClass("menu_highlight");
+						$("#menu_about_contact").addClass("menu_highlight");
+					}
 				}
 			}, false);
-
-			$(document).ready(function() {
-
-				var timeline_years = [];
-				$(".timeline").each(function() {
-					var year = $(this).attr("data-year");
-					if (($.inArray(year, timeline_years)) == -1) {
-						timeline_years.push(year);
-						$("#timeline_tracker").append("<span id='nav-" + year + "' data-year='" + year + "'>" + year + "</span>");
-					}
-				});
-
-				$("body").on("click", "#timeline_tracker span", function() {
-					var year = $(this).attr("data-year");
-					var start_step = $(".str-" + year).attr("id");
-					api.goto(start_step);
-				});
-
-			});
-
 		</script>
-
 	</body>
 </html>
