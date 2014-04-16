@@ -122,28 +122,28 @@ body {
 /*Landing Page End*/
 /*Hint*/
 .hint {
-	background: none repeat scroll 0 0 rgba(207, 65, 65, 0.898);
-	border-top: 3px solid #F8F8F8;
-	bottom: 50;
-	color: #FCFCFC;
-	display: none;
-	font-family: arvo;
-	font-size: 50px;
-	left: 0;
-	opacity: 0;
-	outline: 1px solid #EEEEEE;
-	padding: 20px;
-	position: fixed;
-	right: 0;
-	text-align: center;
-	transform: translateY(400px);
-	transition: opacity 1s ease 0s, transform 0.5s ease 1s;
-	z-index: 100;
+	 background: none repeat scroll 0 0 rgba(207, 65, 65, 0.898);
+    border-top: 3px solid #F8F8F8;
+    bottom: 0;
+    color: #FCFCFC;
+    display: none;
+    font-family: arvo;
+    font-size: 50px;
+    left: 0;
+    opacity: 0;
+    outline: 1px solid #EEEEEE;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    transform: translateY(400px);
+    transition: opacity 1s ease 0s, transform 0.5s ease 1s;
+    z-index: 100;
 }
 .impress-enabled .hint {
 	display: block;
 }
-.impress-on-about .hint {
+.impress-on-landing_page .hint {
 	opacity: 1;
 	transform: translateY(0px);
 	transition: opacity 1s ease 1s, transform 0.5s ease 1s;
