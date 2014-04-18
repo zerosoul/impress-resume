@@ -1,4 +1,4 @@
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 	/*Font-family: Arial,“Microsoft YaHei”, “微软雅黑”, sans-serif;*/
@@ -84,7 +84,7 @@ body {
 	float: right;
 	margin: 160px 250px 0 0;
 }
-.panel a{
+.panel a {
 	color: #395B91;
 	text-decoration: none;
 }
@@ -122,44 +122,57 @@ body {
 /*Landing Page End*/
 /*Hint*/
 .hint {
-	background: none repeat scroll 0 0 rgba(207, 65, 65, 0.898);
-	border-top: 3px solid #F8F8F8;
-	bottom: 50;
-	color: #FCFCFC;
-	display: none;
-	font-family: arvo;
-	font-size: 50px;
-	left: 0;
-	opacity: 0;
-	outline: 1px solid #EEEEEE;
-	padding: 20px;
-	position: fixed;
-	right: 0;
-	text-align: center;
-	transform: translateY(400px);
-	transition: opacity 1s ease 0s, transform 0.5s ease 1s;
-	z-index: 100;
+	 background: none repeat scroll 0 0 rgba(207, 65, 65, 0.898);
+    border-top: 3px solid #F8F8F8;
+    bottom: 0;
+    color: #FCFCFC;
+    display: none;
+    font-family: arvo;
+    font-size: 50px;
+    left: 0;
+    opacity: 0;
+    outline: 1px solid #EEEEEE;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    transform: translateY(400px);
+    transition: opacity 1s ease 0s, transform 0.5s ease 1s;
+    z-index: 100;
 }
 .impress-enabled .hint {
 	display: block;
 }
-.impress-on-about .hint {
+.impress-on-landing_page .hint {
 	opacity: 1;
 	transform: translateY(0px);
 	transition: opacity 1s ease 1s, transform 0.5s ease 1s;
 }
 /*Hint End*/
 /*About Me*/
-.panel .about_me_more{
-	margin-top:30px;
+.panel .about_me_more {
+	margin-top: 30px;
 	font-size: 55px;
-	line-height: 80px;
+	line-height: 90px;
 }
-.panel .about_me_more img{
+.panel .about_me_more img {
 	vertical-align: middle;
+	margin-right: 20px;
 }
-.panel .about_me_more .emphasis{
+.panel .about_me_more .emphasis {
 	color: #a03939;
+}
+.panel .about_me_more .emphasis:hover {
+	background-color: #40835e;
+	-webkit-border-radius: 30px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius: 30px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-radius: 30px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 /*About Me End*/
 /*About Past*/
@@ -213,23 +226,23 @@ body {
 	text-align: left;
 }
 
-.past_item_desc{
+.past_item_desc {
 	font-weight: bold;
 	font-size: 20px;
 	color: #4B4A4A;
 	margin: 5px 0;
 	line-height: 30px;
 }
-.past_item_desc ul{
+.past_item_desc ul {
 	/*list-style-type: none;*/
 	padding-left: 20px;
 }
-.past_item_right .read_more{
+.past_item_right .read_more {
 	margin-left: 20px;
 }
 /*About Past End*/
 /*Recently*/
-.recently_nodejs{
+.recently_nodejs {
 	font-size: 55px;
 	width: inherit;
 	height: inherit;
@@ -242,17 +255,59 @@ body {
 	text-align: center;
 	font-weight: bold;
 }
-.job_list .job_logo{
+.job_list .job_logo {
 	margin-top: 35px;
 	/*font-size: 70px;
-	text-align: center;
-	vertical-align: top;*/
+	 text-align: center;
+	 vertical-align: top;*/
 }
 
 /*Recently End*/
 /*Contact*/
-#about_contact .panel{
+#about_contact .panel {
+	
 	font-size: 50px;
+}
+.about_hobbies{
+	font-size: 50px;
+	line-height: 70px;
+}
+.about_hobbies .small_fonts{
+	margin: 20px 0 20px 0;
+	font-size: 35px;
+	line-height: 45px;
+}
+.about_hobbies .hobby_item{
+	margin: 100px 0;
+}
+.about_hobbies .hobby_item a{
+	
+	color: #d93a49;
+	margin:50px;
+	
+}
+.about_hobbies .cellphone{
+	/*letter-spacing: 5px;*/
+	color: #8e7437;
+	background-color: #8e7437;
+}
+.about_hobbies .cellphone:selection{
+	background-color: #EEEEEE;
+}
+.about_hobbies .hobby_item a:hover{
+	background-color: #40835e;
+	-webkit-border-top-left-radius: 25px;
+-webkit-border-top-right-radius: 7px;
+-webkit-border-bottom-right-radius: 30px;
+-webkit-border-bottom-left-radius: 7px;
+-moz-border-radius-topleft: 25px;
+-moz-border-radius-topright: 7px;
+-moz-border-radius-bottomright: 30px;
+-moz-border-radius-bottomleft: 7px;
+border-top-left-radius: 25px;
+border-top-right-radius: 7px;
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 7px;
 }
 /*Contact End*/
 
