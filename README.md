@@ -7,4 +7,4 @@ For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b
 
 [Online Demo] (http://zerosoul.github.io/impress-resume)
 
-![Snap Shot](img/snapshot.png)
+![Snap Shot](http://impress-resume.qiniudn.com/snapshot.PNG)
