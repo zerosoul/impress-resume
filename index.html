@@ -18,15 +18,18 @@
 					var stag = document.createElement("script");
 					stag.type = "text/javascript";
 					stag.src = urls[i];
-					if (stag.readyState) {
-						stag.onreadystatechange = function() {
-							if (stag.readyState == "loaded" || stag.readyState == "complete") {
-								stag.onreadystatechange = null;
-								callback();
+					//callback the last
+					if (i == (urls.length - 1)) {
+						if (stag.readyState) {
+							stag.onreadystatechange = function() {
+								if (stag.readyState == "loaded" || stag.readyState == "complete") {
+									stag.onreadystatechange = null;
+									callback();
+								}
 							}
+						} else {
+							stag.onload = callback;
 						}
-					} else {
-						stag.onload = callback;
 					}
 					document.body.appendChild(stag);
 				}
@@ -658,15 +661,15 @@
 						}
 					}
 				}, false);
-				$(document).ready(function() {
-
-					//				if ($(body).hasClass("impress-supported")) {
-					//					$(".hint").CSS("display", "block");
-					//
-					//				} else {
-					//					$(".fallback-message").CSS("display", "block");
-					//				}
-				});
+				//			  				$(document).ready(function() {
+				//
+				//			  					//				if ($(body).hasClass("impress-supported")) {
+				//			  					//					$(".hint").CSS("display", "block");
+				//			  					//
+				//			  					//				} else {
+				//			  					//					$(".fallback-message").CSS("display", "block");
+				//			  					//				}
+				//			  				});
 			}
 		</script>
 	</body>
