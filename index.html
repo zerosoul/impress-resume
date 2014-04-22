@@ -8,6 +8,31 @@
 		<title>Yanggc's Personal Resume</title>
 		<link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
 		<link href="css/impress.css" rel="stylesheet">
+		<script type="text/javascript">
+			var loadScriptAsync = function(url, callback) {
+				var urls = url;
+				if (Object.prototype.toString.call(urls) != "[object Array]") {
+					urls = new Array(url);
+				}
+				for ( i = 0; i < urls.length; i++) {
+					var stag = document.createElement("script");
+					stag.type = "text/javascript";
+					stag.src = urls[i];
+					if (stag.readyState) {
+						stag.onreadystatechange = function() {
+							if (stag.readyState == "loaded" || stag.readyState == "complete") {
+								stag.onreadystatechange = null;
+								callback();
+							}
+						}
+					} else {
+						stag.onload = callback;
+					}
+					document.body.appendChild(stag);
+				}
+			};
+
+		</script>
 	</head>
 	<body class="impress-not-supported">
 		<!--fallback message is only visible when there is `impress-not-supported` class on body.-->
@@ -19,7 +44,9 @@
 				For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.
 			</p>
 		</div>
-		<a href="https://github.com/zerosoul/impress-resume" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" alt="Fork me on GitHub" src="img/forkme.png"></a>
+		<a href="https://github.com/zerosoul/impress-resume" target="_blank">
+			<img style="position: absolute; top: 0; right: 0; border: 0;" alt="Fork me on GitHub" src="img/forkme.png">
+		</a>
 		<div id="top_header">
 			<div class="resume_name">
 				<a href="#/landing_page">
@@ -583,60 +610,64 @@
 				Please press spacebar or arrow keys to navigate.
 			</p>
 		</div>
-		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript">
-			!window.jQuery && document.write('<script src="jquery.mini.js"><\/script>');
+		!window.jQuery && document.write('<script src="jquery.mini.js"><\/script>');
 		</script>
 		<script type="text/javascript" src="js/impress.js"></script>
 		<script type="text/javascript">
-			!impress() && document.write('<script src="impress.mini.js"><\/script>');
-		</script>
+		!impress() && document.write('<script src="impress.mini.js"><\/script>');
+		</script>-->
 
 		<script>
-			var api = impress();
-			api.init();
-			document.addEventListener("impress:stepenter", function(event) {
-
-				var data_type = $(".active").attr("data-type");
-				if (data_type == 'past_item') {
-					$(".active .small").show();
-					$(".active .large").hide();
-				} else if (data_type == 'past_items') {
-					$(".small").hide();
-					$(".large").show();
-				}
-			}, false);
-			document.addEventListener("impress:stepenter", function(event) {
-				var data_area= $(".active").attr("data-area");
-				if (data_area == "landing_page") {
-//					$(".hint").CSS("display", "block");
-					$("li").removeClass("menu_highlight");
-					$("#top_header .resume_name").css("background", "#D00505");
-				} else {
-					$("#top_header .resume_name").css("background", "none repeat scroll 0 0 #000000")
-					if (data_area == 'about_me') {
-						$("li").removeClass("menu_highlight");
-						$("#menu_about_me").addClass("menu_highlight");
-					} else if (data_area == 'about_past') {
-						$("li").removeClass("menu_highlight");
-						$("#menu_about_past").addClass("menu_highlight");
-					} else if (data_area == 'about_recently') {
-						$("li").removeClass("menu_highlight");
-						$("#menu_about_recently").addClass("menu_highlight");
-					} else if (data_area == 'about_contact') {
-						$("li").removeClass("menu_highlight");
-						$("#menu_about_contact").addClass("menu_highlight");
+			var jsSrc = ["http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js", "http://impress-resume.qiniudn.com/impress.mini.js"];
+			loadScriptAsync(jsSrc, initialAfterImpress);
+			function initialAfterImpress() {
+				var api = impress();
+				api.init();
+				document.addEventListener("impress:stepenter", function(event) {
+					var data_type = $(".active").attr("data-type");
+					if (data_type == 'past_item') {
+						$(".active .small").show();
+						$(".active .large").hide();
+					} else if (data_type == 'past_items') {
+						$(".small").hide();
+						$(".large").show();
 					}
-				}
-			}, false);
-			$(document).ready(function() {
-//				if ($(body).hasClass("impress-supported")) {
-//					$(".hint").CSS("display", "block");
-//
-//				} else {
-//					$(".fallback-message").CSS("display", "block");
-//				}
-			});
+				}, false);
+				document.addEventListener("impress:stepenter", function(event) {
+					var data_area = $(".active").attr("data-area");
+					if (data_area == "landing_page") {
+						//					$(".hint").CSS("display", "block");
+						$("li").removeClass("menu_highlight");
+						$("#top_header .resume_name").css("background", "#D00505");
+					} else {
+						$("#top_header .resume_name").css("background", "none repeat scroll 0 0 #000000")
+						if (data_area == 'about_me') {
+							$("li").removeClass("menu_highlight");
+							$("#menu_about_me").addClass("menu_highlight");
+						} else if (data_area == 'about_past') {
+							$("li").removeClass("menu_highlight");
+							$("#menu_about_past").addClass("menu_highlight");
+						} else if (data_area == 'about_recently') {
+							$("li").removeClass("menu_highlight");
+							$("#menu_about_recently").addClass("menu_highlight");
+						} else if (data_area == 'about_contact') {
+							$("li").removeClass("menu_highlight");
+							$("#menu_about_contact").addClass("menu_highlight");
+						}
+					}
+				}, false);
+				$(document).ready(function() {
+
+					//				if ($(body).hasClass("impress-supported")) {
+					//					$(".hint").CSS("display", "block");
+					//
+					//				} else {
+					//					$(".fallback-message").CSS("display", "block");
+					//				}
+				});
+			}
 		</script>
 	</body>
 </html>
