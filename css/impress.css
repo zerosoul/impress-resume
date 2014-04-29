@@ -3,6 +3,14 @@
 	padding: 0;
 	/*Font-family: Arial,“Microsoft YaHei”, “微软雅黑”, sans-serif;*/
 }
+.loading{
+	top: 0;
+	background-color: #432;
+	z-index: 9999;
+	height: 5px;
+	position:fixed;
+
+}
 body {
 	overflow: hidden !important;
 }

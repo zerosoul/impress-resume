@@ -2,12 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="author" content="yanggc">
+		<meta name="author" content="yanggc"/>
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 		<title>Yanggc's Personal Resume</title>
-		<link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
-		<link href="css/impress.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet"/>
+		<link href="css/impress.css" rel="stylesheet"/>
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript">
 			var loadScriptAsync = function(url, callback) {
 				var urls = url;
@@ -34,10 +35,13 @@
 					document.body.appendChild(stag);
 				}
 			};
-
+		$(document).ready(function() {
+			$(".loading").fadeOut();
+		});
 		</script>
 	</head>
 	<body class="impress-not-supported">
+			<div class="loading" width="100%"></div>
 		<!--fallback message is only visible when there is `impress-not-supported` class on body.-->
 		<div class="fallback-message" style="display: none">
 			<p>
@@ -81,7 +85,12 @@
 				</ul>
 			</div>
 		</div>
-
+<script
+type="text/javascript">
+$(".loading").animate({
+	'width' : '20%'
+}, 50);
+</script>
 		<!--
 		作者：yanggc888@163.com
 		时间：2014-04-15
@@ -353,6 +362,12 @@
 					</div>
 				</div>
 			</div>
+			<script
+type="text/javascript">
+$(".loading").animate({
+	'width' : '50%'
+}, 50);
+</script>
 			<div class="step" data-x="8500" data-y="6650" data-type="past_item" data-area="about_past">
 				<div class="past_item">
 					<div class="large">
@@ -608,6 +623,12 @@
 				</div>
 			</div>
 		</div>
+		<script
+type="text/javascript">
+$(".loading").animate({
+	'width' : '90%'
+}, 50);
+</script>
 		<div class="hint">
 			<p>
 				Please press spacebar or arrow keys to navigate.
@@ -623,7 +644,7 @@
 		</script>-->
 
 		<script>
-			var jsSrc = ["http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js", "http://impress-resume.qiniudn.com/impress.mini.js"];
+			var jsSrc = ["http://impress-resume.qiniudn.com/impress.mini.js"];
 			loadScriptAsync(jsSrc, initialAfterImpress);
 			function initialAfterImpress() {
 				var api = impress();
@@ -672,5 +693,11 @@
 				//			  				});
 			}
 		</script>
+		<script type="text/javascript">
+$(".loading").animate({
+	'width' : '100%'
+}, 50);
+</script>
+
 	</body>
 </html>
