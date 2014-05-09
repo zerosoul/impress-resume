@@ -319,3 +319,7 @@ border-bottom-left-radius: 7px;
 }
 /*Contact End*/
 
+.domain::before{
+	content: "\0040";
+}
+
