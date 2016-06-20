@@ -1,25 +1,25 @@
 impress-resume
 ==============
 
-My online resume powered by impress.js
+# My online resume powered by impress.js
 
-Optimizations & Features
+## Optimizations & Features
 
-1.Load js files async
+    + Load js files async
 
-1.Using CDN to load imge files
+    + Using CDN to load imge files
 
-1.Compress js&css&html files
+    + Compress js&css&html files
 
-1.Page loading progress on the top
+    + Page loading progress on the top
 
-1.CSS sprite (to do)
+    + CSS sprite (to do)
 
-1.Menu for smart phone(to do)
+    + Menu for smart phone(to do)
 
 
 
-Tip:For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.
+*Tip:For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.**
 
 [Online Demo](http://zerosoul.github.io/impress-resume)
 
