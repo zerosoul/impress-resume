@@ -5,17 +5,17 @@ impress-resume
 
 ## Optimizations & Features
 
-    + Load js files async
+- Load js files async
 
-    + Using CDN to load imge files
+- Using CDN to load imge files
 
-    + Compress js&css&html files
+- Compress js&css&html files
 
-    + Page loading progress on the top
+- Page loading progress on the top
 
-    + CSS sprite (to do)
+- CSS sprite (to do)
 
-    + Menu for smart phone(to do)
+- Menu for smart phone(to do)
 
 
 
